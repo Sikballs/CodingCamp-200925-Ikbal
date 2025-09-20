@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <header>
+        <p class="bg-linear-to-r from-blue-500 to-violet-500 bg-clip-text text-4xl font-extrabold text-transparent ...">
+  Todo List
+</p>
+    </header>
+
+
+    <main>
+        <form>
+            <input type="text" id="todo-input" placeholder="Tambahkah todo mu!"
+                class="border border-gray-300 rounded p-2 mb-2 w-full">
+            <input type="date" id="todo-date" class="border border-gray-300 rounded p-2 mb-2 w-full">
+            
+            <button type="button" onclick="addTodo()" class="bg-blue-500 text-white rounded p-2 mt-2 w-full">Add
+                Todo</button>
+        </form>
+
+    
+        <section class="mt-6">
+            <header>
+                <h2 class="text-2xl font-bold">Your Todos:</h2>
+            </header>
+
+        <ul class="mt-4" id="todo-list">
+            <li class="border-b border-gray-300 py-2">contoh Todo 1 - <span
+                    class="text-sm text-gray-500">2025-09-31</span></li>
+            <li class="border-b border-gray-300 py-2">contoh Todo 2 - <span
+                    class="text-sm text-gray-500">2025-09-30</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ikbal Website</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
